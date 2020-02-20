@@ -20,4 +20,12 @@ Route::get('/', function () {
 
 Route::get('/categories', 'CategoryController@getCategory');
 Route::post('/category-add', 'CategoryController@addCategory');
+Route::get('/category/{id}', 'CategoryController@getCategoryById');
+Route::post('/category-edit/{id}', 'CategoryController@editCategory');
+Route::get('/category-delete/{id}', 'CategoryController@deleteCategory');
+
+
+
+
+
 
